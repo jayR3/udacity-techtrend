@@ -1,0 +1,45 @@
+## Docker commands used to build the application 
+ sudo docker build -t jamesengineer/techtrends .
+
+  
+## Docker commands used to run the application
+sudo docker run -d --name techtrends -p 7111:3111 jamesengineer/techtrends
+
+
+## Docker commands used to get the application logs
+sudo docker logs -f techtrends
+
+
+## Logs from the container running the TechTrends application
+
+* Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:23:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:23:13] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:23:13] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:root:Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:24:20] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:24:27] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:24:40] "GET / HTTP/1.1" 200 -
+INFO:root:Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:24:43] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:24:51] "GET / HTTP/1.1" 200 -
+INFO:root:Article "KubeCon + CloudNativeCon 2021" retrieved!
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:24:53] "GET /2 HTTP/1.1" 200 -
+INFO:root:Article "Kubernetes v1.20 Release Notes" retrieved!
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:24:58] "GET /3 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:25:03] "GET / HTTP/1.1" 200 -
+INFO:root:Article "CNCF Cloud Native Interactive Landscape" retrieved!
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:25:10] "GET /4 HTTP/1.1" 200 -
+INFO:root:Article "CNCF Cloud Native Definition v1.0" retrieved!
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:25:15] "GET /5 HTTP/1.1" 200 -
+INFO:root:"About Us" page was retrieved
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:25:18] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:25:20] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [11/Nov/2021 22:25:22] "GET / HTTP/1.1" 200 -
+
+
