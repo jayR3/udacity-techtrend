@@ -16,7 +16,7 @@ spec:
         app: techtrends
     spec:
       containers:
-      - image: diogosilverio/techtrends
+      - image: jamesengineer/techtrends
         imagePullPolicy: IfNotPresent
         name: techtrends
         ports:
